@@ -13,8 +13,8 @@ async def command_start(message: types.Message):
     known_user = database.search_user_id(message.from_user.id)
     print(known_user)
     if known_user is False:
-        await message.answer("Добрый день, вы подключились к автоматизированной системе компании <b>ООО "
-                             "'КрасТехИнжиниринг'</b>\n"
+        await message.answer("Добрый день, вы подключились к автоматизированной системе компании <b>OOO "
+                             "'---'</b>\n"
                              " Для того, чтобы оставить заявку или задать вопрос, необходимо"
                              " Ваше согласие на обработку персональных данных."
                              " Это нужно для того чтобы система смогла авторизовать Вас!", reply_markup=kb_start,
